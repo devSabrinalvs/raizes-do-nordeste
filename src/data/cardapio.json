@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "nome": "Cuscuz com Queijo",
+    "descricao": "Cuscuz com queijo coalho",
+    "preco": 12.00,
+    "categoriaId": 1,
+    "unidades": [1, 2, 3],
+    "disponivel": true,
+    "sazonal": false
+  },
+  {
+    "id": 2,
+    "nome": "Tapioca de Frango",
+    "descricao": "Tapioca recheada com frango desfiado",
+    "preco": 14.00,
+    "categoriaId": 1,
+    "unidades": [1, 2],
+    "disponivel": true,
+    "sazonal": false
+  },
+  {
+    "id": 3,
+    "nome": "Bolo de Macaxeira",
+    "descricao": "Bolo de macaxeira com coco",
+    "preco": 8.00,
+    "categoriaId": 3,
+    "unidades": [1],
+    "disponivel": false,
+    "sazonal": true
+  },
+  {
+    "id": 4,
+    "nome": "Suco de Umbu",
+    "descricao": "Suco de umbu 500ml",
+    "preco": 7.00,
+    "categoriaId": 2,
+    "unidades": [1, 2, 3],
+    "disponivel": true,
+    "sazonal": false
+  },
+  {
+    "id": 5,
+    "nome": "Baião de Dois",
+    "descricao": "Arroz com feijão verde e queijo coalho",
+    "preco": 18.00,
+    "categoriaId": 1,
+    "unidades": [1, 2],
+    "disponivel": true,
+    "sazonal": false
+  },
+  {
+    "id": 6,
+    "nome": "Café com Tapioca",
+    "descricao": "Café coado e tapioca de manteiga",
+    "preco": 11.00,
+    "categoriaId": 1,
+    "unidades": [1, 2, 3],
+    "disponivel": true,
+    "sazonal": false
+  }
+]

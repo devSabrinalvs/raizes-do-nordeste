@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "titulo": "Combo Café da Manhã",
+    "descricao": "Café com Tapioca + Suco com desconto",
+    "desconto": 10,
+    "tipo": "percentual",
+    "itens": [6, 4],
+    "ativa": true,
+    "unidades": [1, 2, 3]
+  },
+  {
+    "id": 2,
+    "titulo": "Desconto de Segunda",
+    "descricao": "Baião de Dois com desconto às segundas",
+    "desconto": 3.00,
+    "tipo": "fixo",
+    "itens": [5],
+    "ativa": true,
+    "unidades": [1, 2]
+  }
+]
