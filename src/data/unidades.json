@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "nome": "Unidade Centro",
+    "cidade": "Recife",
+    "estado": "PE",
+    "aberta": true
+  },
+  {
+    "id": 2,
+    "nome": "Unidade Norte",
+    "cidade": "Fortaleza",
+    "estado": "CE",
+    "aberta": true
+  },
+  {
+    "id": 3,
+    "nome": "Unidade Sul",
+    "cidade": "Salvador",
+    "estado": "BA",
+    "aberta": false
+  }
+]
