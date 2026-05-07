@@ -1,0 +1,27 @@
+{
+  "id": 1,
+  "nome": "Maria Silva",
+  "email": "maria.silva@email.com",
+  "telefone": "(81) 99999-1234",
+  "cpf": "***.***.***-**",
+  "dataNascimento": "1995-04-12",
+  "pontosFidelidade": 340,
+  "nivel": "Prata",
+  "endereco": {
+    "rua": "Rua das Flores",
+    "numero": "42",
+    "complemento": "Apto 301",
+    "bairro": "Boa Viagem",
+    "cidade": "Recife",
+    "estado": "PE",
+    "cep": "51020-000"
+  },
+  "unidadeFavorita": 1,
+  "consentimentoLGPD": true,
+  "dataConsentimento": "2025-11-03",
+  "historicoResumido": {
+    "totalPedidos": 4,
+    "totalGasto": 109.00,
+    "ultimoPedido": "2026-05-07"
+  }
+}

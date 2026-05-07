@@ -1,0 +1,73 @@
+[
+  {
+    "id": 1001,
+    "usuarioId": 1,
+    "unidadeId": 1,
+    "canal": "app",
+    "status": "entregue",
+    "itens": [
+      { "produtoId": 1, "nome": "Cuscuz com Queijo", "quantidade": 1, "preco": 12.00 },
+      { "produtoId": 4, "nome": "Suco de Umbu", "quantidade": 1, "preco": 7.00 }
+    ],
+    "subtotal": 19.00,
+    "desconto": 0,
+    "total": 19.00,
+    "pagamento": "pix",
+    "dataPedido": "2026-04-28T08:32:00",
+    "dataEntrega": "2026-04-28T08:55:00",
+    "pontosCreditados": 19
+  },
+  {
+    "id": 1002,
+    "usuarioId": 1,
+    "unidadeId": 1,
+    "canal": "web",
+    "status": "entregue",
+    "itens": [
+      { "produtoId": 5, "nome": "Baião de Dois", "quantidade": 2, "preco": 18.00 },
+      { "produtoId": 4, "nome": "Suco de Umbu", "quantidade": 2, "preco": 7.00 }
+    ],
+    "subtotal": 50.00,
+    "desconto": 3.00,
+    "total": 47.00,
+    "pagamento": "credito",
+    "dataPedido": "2026-04-14T12:10:00",
+    "dataEntrega": "2026-04-14T12:45:00",
+    "pontosCreditados": 47
+  },
+  {
+    "id": 1003,
+    "usuarioId": 1,
+    "unidadeId": 2,
+    "canal": "totem",
+    "status": "entregue",
+    "itens": [
+      { "produtoId": 6, "nome": "Café com Tapioca", "quantidade": 1, "preco": 11.00 },
+      { "produtoId": 2, "nome": "Tapioca de Frango", "quantidade": 1, "preco": 14.00 }
+    ],
+    "subtotal": 25.00,
+    "desconto": 0,
+    "total": 25.00,
+    "pagamento": "debito",
+    "dataPedido": "2026-03-22T09:05:00",
+    "dataEntrega": "2026-03-22T09:25:00",
+    "pontosCreditados": 25
+  },
+  {
+    "id": 1004,
+    "usuarioId": 1,
+    "unidadeId": 1,
+    "canal": "app",
+    "status": "em_preparo",
+    "itens": [
+      { "produtoId": 5, "nome": "Baião de Dois", "quantidade": 1, "preco": 18.00 }
+    ],
+    "subtotal": 18.00,
+    "desconto": 0,
+    "total": 18.00,
+    "pagamento": "pix",
+    "dataPedido": "2026-05-07T11:48:00",
+    "dataEntrega": null,
+    "pontosCreditados": 0
+  }
+]
