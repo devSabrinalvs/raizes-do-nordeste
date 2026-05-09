@@ -1,0 +1,33 @@
+.btn {
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: bold;
+  width: 100%;
+  transition: opacity 0.2s;
+}
+
+.btn:hover {
+  opacity: 0.88;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-primario {
+  background-color: #8B2500;
+  color: #fff;
+}
+
+.btn-secundario {
+  background-color: #fff;
+  color: #8B2500;
+  border: 2px solid #8B2500;
+}
+
+.btn-perigo {
+  background-color: #c0392b;
+  color: #fff;
+}

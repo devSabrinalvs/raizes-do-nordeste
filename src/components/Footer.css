@@ -1,0 +1,17 @@
+.footer {
+  background-color: #8B2500;
+  color: #f5f5f5;
+  text-align: center;
+  padding: 16px;
+  font-size: 13px;
+  margin-top: auto;
+}
+
+.footer p {
+  margin-bottom: 4px;
+}
+
+.footer-lgpd {
+  font-size: 12px;
+  opacity: 0.85;
+}

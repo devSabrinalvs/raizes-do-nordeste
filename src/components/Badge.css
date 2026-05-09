@@ -1,0 +1,32 @@
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.badge-info {
+  background-color: #e0f0ff;
+  color: #1a6fb5;
+}
+
+.badge-sucesso {
+  background-color: #e0f7ea;
+  color: #1a7a3c;
+}
+
+.badge-alerta {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.badge-erro {
+  background-color: #fde8e8;
+  color: #c0392b;
+}
+
+.badge-sazonal {
+  background-color: #fff3cd;
+  color: #856404;
+}
