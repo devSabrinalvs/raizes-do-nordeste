@@ -1,0 +1,33 @@
+.processando {
+  text-align: center;
+  padding: 80px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.processando p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.processando-obs {
+  font-size: 13px !important;
+  font-weight: normal !important;
+  color: #888 !important;
+}
+
+.processando-spinner {
+  width: 52px;
+  height: 52px;
+  border: 5px solid #eee;
+  border-top-color: #8B2500;
+  border-radius: 50%;
+  animation: girar 0.9s linear infinite;
+}
+
+@keyframes girar {
+  to { transform: rotate(360deg); }
+}
