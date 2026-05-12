@@ -25,7 +25,7 @@ function Login() {
       setErroLogin('Preencha todos os campos.')
       return
     }
-    // simula login com usuario mock
+    
     if (formLogin.email === 'maria.silva@email.com' && formLogin.senha === '123456') {
       navigate('/')
     } else {

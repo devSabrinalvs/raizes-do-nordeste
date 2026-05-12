@@ -1,7 +1,7 @@
 import { Link, useLocation } from 'react-router-dom'
 import './Header.css'
 
-function Header() {
+function Header({ totalItens = 0 }) {
   const location = useLocation()
 
   return (
@@ -26,9 +26,12 @@ function Header() {
           </Link>
           <Link
             to="/carrinho"
-            className={location.pathname === '/carrinho' ? 'ativo' : ''}
+            className={`header-carrinho ${location.pathname === '/carrinho' ? 'ativo' : ''}`}
           >
             🛒
+            {totalItens > 0 && (
+              <span className="header-badge">{totalItens}</span>
+            )}
           </Link>
           <Link
             to="/login"
