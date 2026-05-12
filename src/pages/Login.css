@@ -1,0 +1,104 @@
+.login-container {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.login-abas {
+  display: flex;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ddd;
+}
+
+.aba {
+  flex: 1;
+  padding: 10px;
+  font-size: 15px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #666;
+  border-bottom: 3px solid transparent;
+  margin-bottom: -2px;
+}
+
+.aba.ativa {
+  color: #8B2500;
+  font-weight: bold;
+  border-bottom: 3px solid #8B2500;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.login-form h2 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.campo label {
+  font-size: 14px;
+  color: #555;
+  font-weight: bold;
+}
+
+.campo input {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  outline: none;
+}
+
+.campo input:focus {
+  border-color: #8B2500;
+}
+
+.campo-lgpd {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  background-color: #fff8f0;
+  border: 1px solid #f5c18a;
+  border-radius: 6px;
+  padding: 12px;
+  font-size: 13px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.campo-lgpd input[type="checkbox"] {
+  margin-top: 2px;
+  accent-color: #8B2500;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.lgpd-link {
+  color: #8B2500;
+  text-decoration: underline;
+}
+
+.login-erro {
+  color: #c0392b;
+  font-size: 13px;
+  background-color: #fde8e8;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+.login-dica {
+  font-size: 12px;
+  color: #999;
+  text-align: center;
+}
