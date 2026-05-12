@@ -10,6 +10,7 @@ import Pagamento from './pages/Pagamento'
 import Processando from './pages/Processando'
 import PedidoAprovado from './pages/PedidoAprovado'
 import PedidoNegado from './pages/PedidoNegado'
+import Acompanhamento from './pages/Acompanhamento'
 import './App.css'
 
 function App() {
@@ -77,6 +78,7 @@ function App() {
           />
           <Route path="/pedido-aprovado" element={<PedidoAprovado />} />
           <Route path="/pedido-negado" element={<PedidoNegado />} />
+          <Route path="/acompanhamento" element={<Acompanhamento />} />
         </Routes>
       </main>
       <Footer />

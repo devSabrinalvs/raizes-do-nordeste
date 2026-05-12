@@ -1,0 +1,149 @@
+.acomp h2 {
+  font-size: 20px;
+  margin-bottom: 16px;
+  color: #333;
+}
+
+.acomp-secao {
+  margin-bottom: 24px;
+}
+
+.acomp-secao h3 {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.acomp-ativo {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.acomp-cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.acomp-numero {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.acomp-itens p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 2px;
+}
+
+.acomp-progresso {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0;
+  position: relative;
+}
+
+.acomp-progresso::before {
+  content: '';
+  position: absolute;
+  top: 14px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #eee;
+  z-index: 0;
+}
+
+.acomp-etapa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  color: #aaa;
+  text-align: center;
+  flex: 1;
+  z-index: 1;
+}
+
+.acomp-etapa.concluida {
+  color: #1a7a3c;
+}
+
+.acomp-etapa.atual {
+  color: #8B2500;
+  font-weight: bold;
+}
+
+.acomp-bolinha {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: bold;
+  color: #aaa;
+}
+
+.acomp-etapa.concluida .acomp-bolinha {
+  background-color: #1a7a3c;
+  color: #fff;
+}
+
+.acomp-etapa.atual .acomp-bolinha {
+  background-color: #8B2500;
+  color: #fff;
+}
+
+.acomp-canal {
+  font-size: 12px;
+  color: #aaa;
+}
+
+.acomp-historico {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.acomp-historico-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.acomp-rodape {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: #555;
+  border-top: 1px solid #eee;
+  padding-top: 8px;
+}
+
+.acomp-data {
+  color: #aaa;
+}
+
+.acomp-sem-pedido {
+  text-align: center;
+  padding: 32px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.acomp-sem-pedido p {
+  color: #888;
+  font-size: 15px;
+}
+
+.acomp-sem-pedido .btn {
+  width: auto;
+  padding: 10px 24px;
+}
