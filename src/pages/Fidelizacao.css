@@ -1,0 +1,141 @@
+.fidel {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.fidel h2 {
+  font-size: 20px;
+  color: #333;
+}
+
+.fidel h3 {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.fidel-perfil {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background-color: #8B2500;
+  color: #fff;
+}
+
+.fidel-perfil-topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.fidel-nome {
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.fidel-perfil .badge {
+  background-color: rgba(255,255,255,0.2);
+  color: #fff;
+}
+
+.fidel-pontos-box {
+  text-align: right;
+}
+
+.fidel-pontos-num {
+  display: block;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.fidel-pontos-label {
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+.fidel-progresso-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  opacity: 0.85;
+  margin-bottom: 6px;
+}
+
+.fidel-barra {
+  height: 8px;
+  background-color: rgba(255,255,255,0.25);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.fidel-barra-fill {
+  height: 100%;
+  background-color: #f39c12;
+  border-radius: 4px;
+  transition: width 0.4s;
+}
+
+.fidel-faltam {
+  font-size: 12px;
+  opacity: 0.85;
+  margin-top: 6px;
+  text-align: center;
+}
+
+.fidel-maximo {
+  font-size: 14px;
+  text-align: center;
+}
+
+.fidel-como-ganhar ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.fidel-como-ganhar li {
+  font-size: 14px;
+  color: #555;
+}
+
+.fidel-secao h3 {
+  margin-bottom: 10px;
+}
+
+.fidel-extrato {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.fidel-extrato-item {
+  padding: 12px 16px;
+}
+
+.fidel-extrato-linha {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fidel-extrato-titulo {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+.fidel-extrato-data {
+  font-size: 12px;
+  color: #aaa;
+  margin-top: 2px;
+}
+
+.fidel-pontos-credito {
+  font-size: 16px;
+  font-weight: bold;
+  color: #1a7a3c;
+}

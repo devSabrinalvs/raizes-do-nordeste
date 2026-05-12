@@ -11,6 +11,7 @@ import Processando from './pages/Processando'
 import PedidoAprovado from './pages/PedidoAprovado'
 import PedidoNegado from './pages/PedidoNegado'
 import Acompanhamento from './pages/Acompanhamento'
+import Fidelizacao from './pages/Fidelizacao'
 import './App.css'
 
 function App() {
@@ -79,6 +80,7 @@ function App() {
           <Route path="/pedido-aprovado" element={<PedidoAprovado />} />
           <Route path="/pedido-negado" element={<PedidoNegado />} />
           <Route path="/acompanhamento" element={<Acompanhamento />} />
+          <Route path="/fidelizacao" element={<Fidelizacao />} />
         </Routes>
       </main>
       <Footer />
