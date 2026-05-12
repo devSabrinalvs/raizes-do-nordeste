@@ -1,0 +1,124 @@
+.home-banner {
+  background-color: #8B2500;
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+
+.home-banner h1 {
+  font-size: 28px;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+.home-banner p {
+  font-size: 15px;
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+.home-banner .btn {
+  width: auto;
+  padding: 10px 28px;
+  background-color: #fff;
+  color: #8B2500;
+  font-weight: bold;
+  border-radius: 6px;
+}
+
+.home-secao {
+  margin-bottom: 28px;
+}
+
+.home-secao h2 {
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.home-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.home-promo-card h3 {
+  font-size: 16px;
+  margin: 6px 0 4px;
+}
+
+.home-promo-card p {
+  font-size: 14px;
+  color: #555;
+}
+
+.home-desconto {
+  margin-top: 8px !important;
+  font-weight: bold;
+  color: #8B2500 !important;
+}
+
+.home-unidade-card p {
+  font-size: 14px;
+  color: #666;
+  margin-top: 6px;
+}
+
+.home-unidade-topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home-unidade-nome {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.home-categorias .home-lista {
+  flex-direction: row;
+  gap: 12px;
+}
+
+.home-categorias .home-lista a {
+  flex: 1;
+}
+
+.home-cat-card {
+  text-align: center;
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+}
+
+.home-cat-card:hover {
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+
+.home-cat-card span {
+  font-size: 28px;
+}
+
+.home-cat-card p {
+  margin-top: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #444;
+}
+
+@media (min-width: 768px) {
+  .home-lista {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .home-promo-card,
+  .home-unidade-card {
+    flex: 1 1 calc(50% - 6px);
+  }
+
+  .home-banner h1 {
+    font-size: 36px;
+  }
+}
