@@ -5,6 +5,7 @@ import Footer from './components/Footer'
 import Home from './pages/Home'
 import Login from './pages/Login'
 import Cardapio from './pages/Cardapio'
+import Carrinho from './pages/Carrinho'
 import './App.css'
 
 function App() {
@@ -26,6 +27,15 @@ function App() {
     setCarrinho(prev => prev.filter(i => i.id !== id))
   }
 
+  function alterarQuantidade(id, valor) {
+    setCarrinho(prev => prev.map(i => {
+      if (i.id !== id) return i
+      const nova = i.quantidade + valor
+      if (nova <= 0) return null
+      return { ...i, quantidade: nova }
+    }).filter(Boolean))
+  }
+
   function limparCarrinho() {
     setCarrinho([])
   }
@@ -42,6 +52,16 @@ function App() {
           <Route
             path="/cardapio"
             element={<Cardapio onAdicionarCarrinho={adicionarCarrinho} />}
+          />
+          <Route
+            path="/carrinho"
+            element={
+              <Carrinho
+                carrinho={carrinho}
+                onRemover={removerCarrinho}
+                onAlterar={alterarQuantidade}
+              />
+            }
           />
         </Routes>
       </main>
