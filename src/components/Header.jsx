@@ -12,17 +12,17 @@ function Header({ totalItens = 0 }) {
         </Link>
 
         <nav className="header-nav">
-          <Link
-            to="/"
-            className={location.pathname === '/' ? 'ativo' : ''}
-          >
+          <Link to="/" className={location.pathname === '/' ? 'ativo' : ''}>
             Home
           </Link>
-          <Link
-            to="/cardapio"
-            className={location.pathname === '/cardapio' ? 'ativo' : ''}
-          >
+          <Link to="/cardapio" className={location.pathname === '/cardapio' ? 'ativo' : ''}>
             Cardápio
+          </Link>
+          <Link to="/acompanhamento" className={location.pathname === '/acompanhamento' ? 'ativo' : ''}>
+            Pedidos
+          </Link>
+          <Link to="/fidelizacao" className={location.pathname === '/fidelizacao' ? 'ativo' : ''}>
+            Pontos
           </Link>
           <Link
             to="/carrinho"
@@ -33,10 +33,7 @@ function Header({ totalItens = 0 }) {
               <span className="header-badge">{totalItens}</span>
             )}
           </Link>
-          <Link
-            to="/login"
-            className={location.pathname === '/login' ? 'ativo' : ''}
-          >
+          <Link to="/login" className={location.pathname === '/login' ? 'ativo' : ''}>
             Entrar
           </Link>
         </nav>

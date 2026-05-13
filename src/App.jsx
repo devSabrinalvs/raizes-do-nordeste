@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Home from './pages/Home'
@@ -12,7 +12,25 @@ import PedidoAprovado from './pages/PedidoAprovado'
 import PedidoNegado from './pages/PedidoNegado'
 import Acompanhamento from './pages/Acompanhamento'
 import Fidelizacao from './pages/Fidelizacao'
+import Totem from './pages/Totem'
+import BottomNav from './components/BottomNav'
 import './App.css'
+
+function Layout({ children, totalItens }) {
+  const location = useLocation()
+  const isTotem = location.pathname === '/totem'
+
+  if (isTotem) return <>{children}</>
+
+  return (
+    <>
+      <Header totalItens={totalItens} />
+      <main className="pagina">{children}</main>
+      <Footer />
+      <BottomNav totalItens={totalItens} />
+    </>
+  )
+}
 
 function App() {
   const [carrinho, setCarrinho] = useState([])
@@ -50,40 +68,24 @@ function App() {
 
   return (
     <BrowserRouter>
-      <Header totalItens={totalItens} />
-      <main className="pagina">
+      <Layout totalItens={totalItens}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
-          <Route
-            path="/cardapio"
-            element={<Cardapio onAdicionarCarrinho={adicionarCarrinho} />}
-          />
+          <Route path="/cardapio" element={<Cardapio onAdicionarCarrinho={adicionarCarrinho} />} />
           <Route
             path="/carrinho"
-            element={
-              <Carrinho
-                carrinho={carrinho}
-                onRemover={removerCarrinho}
-                onAlterar={alterarQuantidade}
-              />
-            }
+            element={<Carrinho carrinho={carrinho} onRemover={removerCarrinho} onAlterar={alterarQuantidade} />}
           />
-          <Route
-            path="/pagamento"
-            element={<Pagamento carrinho={carrinho} />}
-          />
-          <Route
-            path="/processando"
-            element={<Processando onLimparCarrinho={limparCarrinho} />}
-          />
+          <Route path="/pagamento" element={<Pagamento carrinho={carrinho} />} />
+          <Route path="/processando" element={<Processando onLimparCarrinho={limparCarrinho} />} />
           <Route path="/pedido-aprovado" element={<PedidoAprovado />} />
           <Route path="/pedido-negado" element={<PedidoNegado />} />
           <Route path="/acompanhamento" element={<Acompanhamento />} />
           <Route path="/fidelizacao" element={<Fidelizacao />} />
+          <Route path="/totem" element={<Totem />} />
         </Routes>
-      </main>
-      <Footer />
+      </Layout>
     </BrowserRouter>
   )
 }

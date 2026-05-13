@@ -62,3 +62,10 @@
   align-items: center;
   justify-content: center;
 }
+
+/* no mobile esconde o nav — a barra inferior já cobre */
+@media (max-width: 767px) {
+  .header-nav {
+    display: none;
+  }
+}
